@@ -61,6 +61,7 @@ const StoryView = observer(() => {
         !comments?.length ? null :
         <button
           onClick={() => refreshComments()}
+          style={{width: '160px'}}
         >
           { isRefreshingComments ? 'Refreshing...' : 'Refresh Comments' }
         </button>

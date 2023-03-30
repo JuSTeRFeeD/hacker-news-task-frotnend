@@ -25,7 +25,7 @@ const Home = observer(() => {
   return (
     <div>
       <div>
-        <h1>Newest Hackers News</h1>
+        <h1>Newest on Hackers News</h1>
         <button onClick={() => refreshStories()} style={{width: '150px'}}>
           { isLoadingStories ? 'Loading...' : 'Refresh news' }
         </button>
