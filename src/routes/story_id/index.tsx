@@ -23,8 +23,9 @@ const Story = observer(() => {
         !story || !story.url ? null :
         <a
           className="button"
-          target={"_blank"}
-          href={story.url} rel="noreferrer"
+          target="_blank"
+          href={story.url}
+          rel="noreferrer"
         >
           Link to story page
         </a>
