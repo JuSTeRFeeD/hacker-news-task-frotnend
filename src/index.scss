@@ -1,0 +1,75 @@
+@import 'styles/variables';
+
+@mixin text-1 {
+  font-size: 18px;
+}
+@mixin text-2 {
+  font-size: 22px;
+}
+@mixin text-3 {
+  font-size: 26px;
+}
+@mixin text-4 {
+  font-size: 32px;
+}
+
+
+body {
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: $white;
+
+  @include text-1;
+  color: $text;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button, .button {
+  margin-top: 16px;
+  width: auto;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid $black-200;
+  border-radius: 8px;
+
+
+  &:hover {
+    background: $black-100;
+  }
+}
+
+h1,h2,h3 {
+  margin: 16px 0;
+  font-weight: 600;
+}
+h1 {
+  @include text-4;
+}
+h2 {
+  @include text-3;
+}
+h3 {
+  @include text-2;
+}

@@ -1,0 +1,21 @@
+@import 'styles/variables';
+
+.app {
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 32px;
+  margin: 0 auto;
+
+  &__header {
+      display: flex;
+      gap: 20px;
+   }
+}
+
+.link {
+  color: $black-400;
+  &_active {
+    border-bottom: 2px solid $black-900;
+    color: $black-900;
+  }
+}

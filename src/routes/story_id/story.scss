@@ -1,0 +1,43 @@
+@import './src/styles/variables';
+
+.story {
+  &__date {
+    margin-top: 16px;
+  }
+}
+
+.comment {
+  display: block;
+  margin-top: 16px;
+
+  &__by {
+    font-weight: 500;
+  }
+
+  &__date {
+    margin-left: 10px;
+    color: $black-400;
+  }
+
+  &__text {
+    margin-top: 6px;
+    padding-left: 6px;
+    border-left: 2px dotted;
+  }
+
+  &__toggle {
+    user-select: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    color: $black-400;
+
+    &_showed {
+      color: $red
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
